@@ -1,0 +1,10 @@
+<svg width="1278" height="1278" viewBox="0 0 1278 1278" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1278" height="1278" rx="8" fill="white"/>
+<path d="M263 263C1015 263 1015 1015 1015 1015C764.333 1015 263 864.6 263 263Z" stroke="black" stroke-width="32"/>
+<style>
+    @media (prefers-color-scheme: dark) {
+        rect { fill: black; }
+        path { fill: white; }
+    }
+</style>
+</svg>

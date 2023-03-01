@@ -1,11 +1,12 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   standalone: true,
-  selector: 'techmigos-root',
-  template: `<h1>Welcome to {{ title }}</h1>`,
+  imports: [CommonModule, RouterModule],
+  selector: 'body[tm]',
+  template: `<router-outlet></router-outlet>`,
   styles: [],
 })
-export class AppComponent {
-  title = 'blog';
-}
+export class AppComponent {}

@@ -1,0 +1,40 @@
+{
+  "name": "routes",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/routes/src",
+  "prefix": "",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:ng-packagr-lite",
+      "outputs": [
+        "{workspaceRoot}/dist/{projectRoot}"
+      ],
+      "options": {
+        "project": "libs/routes/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/routes/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/routes/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": [
+        "{options.outputFile}"
+      ],
+      "options": {
+        "lintFilePatterns": [
+          "libs/routes/**/*.ts",
+          "libs/routes/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

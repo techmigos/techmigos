@@ -3,20 +3,29 @@
   "$schema": "../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "sourceRoot": "apps/blog/src",
-  "prefix": "techmigos",
+  "prefix": "",
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/blog",
         "index": "apps/blog/src/index.html",
         "main": "apps/blog/src/main.ts",
-        "polyfills": ["zone.js"],
+        "polyfills": [
+          "zone.js"
+        ],
         "tsConfig": "apps/blog/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
-        "assets": ["apps/blog/src/favicon.ico", "apps/blog/src/assets"],
-        "styles": ["apps/blog/src/styles.scss"],
+        "assets": [
+          "apps/blog/src/favicon.svg",
+          "apps/blog/src/assets"
+        ],
+        "styles": [
+          "apps/blog/src/styles.scss"
+        ],
         "scripts": []
       },
       "configurations": {
@@ -66,9 +75,14 @@
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
-      "outputs": ["{options.outputFile}"],
+      "outputs": [
+        "{options.outputFile}"
+      ],
       "options": {
-        "lintFilePatterns": ["apps/blog/**/*.ts", "apps/blog/**/*.html"]
+        "lintFilePatterns": [
+          "apps/blog/**/*.ts",
+          "apps/blog/**/*.html"
+        ]
       }
     }
   },
